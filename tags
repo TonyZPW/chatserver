@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER	common.h	/^typedef struct BUFFER$/;"	s
+BUFFER	common.h	/^} BUFFER;$/;"	t	typeref:struct:BUFFER
+BUFFER::buf	common.h	/^    string buf;  \/\/ 字符串部分内容$/;"	m	struct:BUFFER	access:public
+BUFFER::fd	common.h	/^    int fd;   \/\/ socket$/;"	m	struct:BUFFER	access:public
+BUFFER::recv_size	common.h	/^    short recv_size; \/\/ 一共收到的尺寸$/;"	m	struct:BUFFER	access:public
+BUFFER::total_size	common.h	/^    short total_size; \/\/ 字符串部分内容应该有的尺寸$/;"	m	struct:BUFFER	access:public
+USER	common.h	/^typedef struct USER$/;"	s
+USER	common.h	/^} USER;$/;"	t	typeref:struct:USER
+USER::fd	common.h	/^    int fd; \/\/ socket$/;"	m	struct:USER	access:public
+USER::ipaddr	common.h	/^    string ipaddr;$/;"	m	struct:USER	access:public
+USER::username	common.h	/^    string username; $/;"	m	struct:USER	access:public
+__COMMON_H__	common.h	3;"	d
+buf	common.h	/^    string buf;  \/\/ 字符串部分内容$/;"	m	struct:BUFFER	access:public
+buffers	common.cpp	/^map<int, BUFFER*> buffers;$/;"	v
+clients	common.cpp	/^list<int> clients;$/;"	v
+common_init	common.cpp	/^void common_init()$/;"	f	signature:()
+common_init	common.h	/^void common_init();$/;"	p	signature:()
+fd	common.h	/^    int fd;   \/\/ socket$/;"	m	struct:BUFFER	access:public
+fd	common.h	/^    int fd; \/\/ socket$/;"	m	struct:USER	access:public
+ipaddr	common.h	/^    string ipaddr;$/;"	m	struct:USER	access:public
+main	main.cpp	/^int main()$/;"	f	signature:()
+mutex	common.cpp	/^pthread_mutex_t mutex;$/;"	v
+recv_size	common.h	/^    short recv_size; \/\/ 一共收到的尺寸$/;"	m	struct:BUFFER	access:public
+response	thread3.cpp	/^void response(const char* resp, short len)$/;"	f	signature:(const char* resp, short len)
+sem	common.cpp	/^sem_t sem;$/;"	v
+tasks	common.cpp	/^list<BUFFER*> tasks;$/;"	v
+thread2	main.cpp	/^extern void* thread2(void*);$/;"	p	file:	signature:(void*)
+thread2	thread2.cpp	/^void* thread2(void*)$/;"	f	signature:(void*)
+thread3	main.cpp	/^extern void* thread3(void*);$/;"	p	file:	signature:(void*)
+thread3	thread3.cpp	/^void* thread3(void*)$/;"	f	signature:(void*)
+total_size	common.h	/^    short total_size; \/\/ 字符串部分内容应该有的尺寸$/;"	m	struct:BUFFER	access:public
+username	common.h	/^    string username; $/;"	m	struct:USER	access:public
+users	common.cpp	/^map<string, USER*> users;$/;"	v
